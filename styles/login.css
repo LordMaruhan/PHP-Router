@@ -1,0 +1,78 @@
+body {
+    margin: 0;
+    background: #0f172a;
+    font-family: "Inter", sans-serif;
+    color: #e2e8f0;
+}
+
+.login-wrapper {
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.login-card {
+    background: rgba(255,255,255,0.05);
+    padding: 30px;
+    width: 320px;
+    border-radius: 12px;
+    box-shadow: 0 10px 25px rgba(0,0,0,0.4);
+    backdrop-filter: blur(6px);
+}
+
+.title {
+    text-align: center;
+    margin-bottom: 20px;
+    font-size: 24px;
+}
+
+/* Одинаковые поля */
+form input {
+    width: 100%;
+    padding: 13px;
+    margin: 10px 0;
+    background: rgba(255,255,255,0.08);
+    border-radius: 10px;
+    border: 1px solid rgba(255,255,255,0.15);
+    color: #e2e8f0;
+    font-size: 15px;
+}
+
+form input::placeholder {
+    color: #94a3b8;
+}
+
+/* Кнопка тоже такого же размера и стиля */
+.btn {
+    width: 100%;
+    padding: 13px;
+    margin-top: 12px;
+    background: #10b981;
+    border: 1px solid #10b981;
+    border-radius: 10px;
+    color: #022c22;
+    font-size: 16px;
+    font-weight: 600;
+    cursor: pointer;
+    transition: 0.2s;
+}
+
+.btn:hover {
+    background: #0d9468;
+    border-color: #0d9468;
+}
+
+.links {
+    text-align: center;
+    margin-top: 12px;
+}
+
+.link {
+    color: #38bdf8;
+    text-decoration: none;
+}
+
+.link:hover {
+    text-decoration: underline;
+}

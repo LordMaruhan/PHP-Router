@@ -1,0 +1,149 @@
+body {
+  margin: 0;
+  font-family: 'Orbitron', sans-serif;
+  background-image: url("/mal/fon8.jpg");
+  color: #f0f0f0;
+}
+
+header {
+  background-color: #111;
+  padding: 20px;
+  text-align: center;
+  position: fixed;
+  width: 100%;
+  top: 0;
+  z-index: 1000;
+}
+
+  header h1 {
+      margin: 0;
+      font-size: 2.5em;
+  }
+
+nav ul {
+  list-style: none;
+  padding: 0;
+  margin: 10px 0 0;
+}
+
+  nav ul li {
+      display: inline;
+      margin: 0 15px;
+  }
+
+      nav ul li a {
+          color: #f0f0f0;
+          text-decoration: none;
+          transition: color 0.3s;
+      }
+
+          nav ul li a:hover {
+              color: crimson;
+          }
+
+
+          .login-button {
+            display: inline-block;
+            padding: 12px 25px;
+            margin-top: 20px;
+            background: linear-gradient(135deg, #6a00ff, #b300ff);
+            color: white;
+            font-size: 18px;
+            font-weight: bold;
+            text-decoration: none;
+            border-radius: 10px;
+            box-shadow: 0 0 12px rgba(179, 0, 255, 0.7);
+            transition: 0.3s ease;
+        }
+        
+        .login-button:hover {
+            background: linear-gradient(135deg, #b300ff, #ff00ff);
+            box-shadow: 0 0 20px rgba(255, 0, 255, 1);
+            transform: scale(1.05);
+        }
+.hero {
+  position: relative;
+  height: 150vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  overflow: hidden;
+}
+
+#bg-video {
+  position: absolute;
+  top: 0;
+  left: 0;
+  min-width: 100%;
+  min-height: 100%;
+  z-index: -1;
+  object-fit: cover;
+}
+
+.overlay {
+  background: rgba(0, 0, 0, 0.6);
+  padding: 40px;
+  border-radius: 10px;
+  animation: fadeIn 2s ease-in-out;
+}
+
+.btn {
+  display: inline-block;
+  padding: 12px 25px;
+  border-radius: 12px;
+  background: linear-gradient(135deg, #7500ff, #d400ff);
+  color: #fff;
+  font-size: 18px;
+  font-weight: bold;
+  text-decoration: none;
+  box-shadow: 0 0 12px #c400ff;
+  transition: 0.3s;
+}
+
+  .btn:hover {
+    transform: scale(1.07);
+    box-shadow: 0 0 22px #ff29ff;
+  }
+
+section {
+  padding: 70px 20px;
+  text-align: center;
+}
+
+#characters .carousel {
+  display: flex;
+  justify-content: center;
+  gap: 20px;
+  flex-wrap: wrap;
+}
+
+#characters img {
+  max-width: 250px;
+  border-radius: 10px;
+  transition: transform 0.3s;
+}
+
+  #characters img:hover {
+      transform: scale(1.05);
+  }
+
+footer {
+  background-color: #111;
+  text-align: center;
+  padding: 20px;
+  font-size: 0.9em;
+}
+
+
+@keyframes fadeIn {
+  from {
+      opacity: 0;
+      transform: translateY(20px);
+  }
+
+  to {
+      opacity: 1;
+      transform: translateY(0);
+  }
+}
